@@ -18,12 +18,11 @@ spring:
         dialect: org.hibernate.dialect.H2Dialect
         format_sql: true
     show-sql: true
-    
 graphql:
   servlet:
     enabled: true
     mapping: /graphql
-    corsEnabled: false
+    corsEnabled: true
     cors:
       allowed-origins: http://localhost:8080
       allowed-methods: GET, HEAD, POST, PATCH

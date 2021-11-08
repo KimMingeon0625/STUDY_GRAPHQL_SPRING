@@ -1,18 +1,18 @@
--- DROP TABLE IF EXISTS member;
--- DROP TABLE IF EXISTS role;
---
--- CREATE TABLE member (
---   id INT AUTO_INCREMENT  PRIMARY KEY,
---   login_id VARCHAR(250) NOT NULL,
---   password VARCHAR(250) NOT NULL,
---   name VARCHAR(250) NOT NULL
--- );
---
--- CREATE TABLE role (
---   id INT AUTO_INCREMENT  PRIMARY KEY,
---   member_id INT NOT NULL,
---   role VARCHAR(250) NOT NULL
--- );
+DROP TABLE IF EXISTS member;
+DROP TABLE IF EXISTS role;
+
+CREATE TABLE member (
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  login_id VARCHAR(250) NOT NULL,
+  password VARCHAR(250) NOT NULL,
+  name VARCHAR(250) NOT NULL
+);
+
+CREATE TABLE role (
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  member_id INT NOT NULL,
+  role VARCHAR(250) NOT NULL
+);
 
 INSERT INTO member (id, login_id, password, name) VALUES
   (1, 'member', 'password', '멤버'),
