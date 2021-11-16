@@ -32,3 +32,5 @@ graphql:
   tools:
     schema-location-pattern: "**/*.graphqls"
     introspection-enabled: true
+  playground: # Playground on/off 스키마 노출 -> 보안 취약
+    enabled: false
